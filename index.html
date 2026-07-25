@@ -106,7 +106,7 @@
     <div class="logo">Healby</div>
 
     <h1>Gizlilik Politikası</h1>
-    <p class="subtitle">Son güncelleme: Mayıs 2026</p>
+    <p class="subtitle">Son güncelleme: Temmuz 2026</p>
 
     <div class="highlight-box">
       <p>Healby uygulaması, kullanıcı verilerini üçüncü taraflarla satmaz veya paylaşmaz. Sağlık verileriniz yalnızca cihazınızda saklanır.</p>
@@ -135,6 +135,9 @@
       <li>Eksiklik bildirimleri (hangi üründe hangi bilginin eksik olduğu)</li>
     </ul>
 
+    <p><strong>Kamera kullanımı:</strong></p>
+    <p>Uygulama, yalnızca barkod okumak ve isteğe bağlı olarak eksik ürünlere fotoğraf eklemek için kamera erişimi ister. Barkod okuma tamamen cihaz üzerinde gerçekleşir; kamera görüntüsü kaydedilmez, sunucularımıza veya üçüncü taraflara gönderilmez. Kamera izni yalnızca tarama ekranı açıkken kullanılır ve izni cihaz ayarlarından istediğiniz zaman geri alabilirsiniz.</p>
+
     <p><strong>Toplamadığımız veriler:</strong></p>
     <ul>
       <li>Ad, soyad, e-posta adresi</li>
@@ -160,13 +163,14 @@
     <p>Healby aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
     <ul>
       <li><strong>Supabase</strong> — Veritabanı altyapısı. Supabase'in gizlilik politikası: supabase.com/privacy</li>
-      <li><strong>Google ML Kit</strong> — Barkod okuma ve metin tanıma. Google'ın gizlilik politikası: policies.google.com/privacy</li>
+      <li><strong>Apple Vision</strong> (iOS) — Barkod okuma. Cihaz üzerinde çalışır, görüntü Apple'a veya bize gönderilmez.</li>
+      <li><strong>Google ML Kit</strong> (Android) — Barkod okuma. Cihaz üzerinde çalışır. Google'ın gizlilik politikası: policies.google.com/privacy</li>
     </ul>
     <p>Bu hizmetlerin kendi gizlilik politikaları mevcuttur. Healby, bu hizmetlere kullanıcı kimliğini tanımlayacak herhangi bir kişisel veri göndermemektedir.</p>
 
     <h2>6. Veri Güvenliği</h2>
     <p>Sunucularımızda saklanan veriler SSL/TLS şifrelemesi ile korunmaktadır. Supabase altyapısı, Frankfurt (Almanya) bölgesindeki sunucularda çalışmakta olup Avrupa Birliği veri koruma standartlarına uygundur.</p>
-    <p>Cihazda saklanan veriler iOS'un güvenli depolama sistemi (SharedPreferences) aracılığıyla korunmaktadır.</p>
+    <p>Cihazda saklanan veriler, uygulamanın kendi özel alanında (iOS'ta UserDefaults, Android'de SharedPreferences) tutulur. Bu alana başka uygulamalar erişemez; işletim sisteminin uygulama izolasyonu ve cihaz şifrelemesi ile korunur. Bu veriler hiçbir sunucuya gönderilmez ve uygulamayı sildiğinizde cihazınızdan tamamen kaldırılır.</p>
 
     <h2>7. Çocukların Gizliliği</h2>
     <p>Healby, 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamamaktadır. Ebeveynler veya yasal veliler, çocuklarının verilerini silmemizi talep etmek için bizimle iletişime geçebilir.</p>
